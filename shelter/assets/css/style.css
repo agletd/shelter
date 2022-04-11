@@ -120,7 +120,7 @@ h5 {
   border-radius: 100px;
   font-family: "Georgia", sans-serif;
   font-size: 17px;
-  line-height: 130%;
+  line-height: 22.1px;
   padding: 15px 45px;
   display: inline-block;
   letter-spacing: 0.06em;
@@ -141,7 +141,7 @@ h5 {
   border-radius: 100px;
   font-family: "Georgia", sans-serif;
   font-size: 17px;
-  line-height: 130%;
+  line-height: 22.1px;
   padding: 13px 43px;
   display: inline-block;
   letter-spacing: 0.06em;
@@ -200,11 +200,15 @@ header {
 
 .logo__title {
   font-weight: 400;
-  color: #F1CDB3;
+  color: #545454;
   font-size: 32px;
   line-height: 35px;
   letter-spacing: 0.06em;
   margin-bottom: 10px;
+}
+
+body.mainpage .logo__title {
+  color: #F1CDB3;
 }
 
 .logo__subtitle {
@@ -212,6 +216,10 @@ header {
   line-height: 15px;
   letter-spacing: 0.1em;
   text-align: center;
+  color: #292929;
+}
+
+body.mainpage .logo__subtitle {
   color: #FFFFFF;
 }
 
@@ -221,6 +229,7 @@ header {
   display: flex;
   margin: 0;
   padding-right: 1px;
+  margin-bottom: 2px;
 }
 
 .topmenu__item {
@@ -229,17 +238,17 @@ header {
 }
 
 .topmenu__item a {
-  color: #CDCDCD;
+  color: #545454;
   position: relative;
   display: block;
 }
 
 .topmenu__item a:hover {
-  color: #FAFAFA;
+  color: #292929;
 }
 
 .topmenu__item.topmenu__item_active a {
-  color: #FFFFFF;
+  color: #545454;
 }
 
 .topmenu__item.topmenu__item_active a:before {
@@ -250,6 +259,18 @@ header {
   width: 100%;
   height: 3px;
   background: #F1CDB3;
+}
+
+body.mainpage .topmenu__item a {
+  color: #CDCDCD;
+}
+
+body.mainpage .topmenu__item a:hover {
+  color: #FAFAFA;
+}
+
+body.mainpage .topmenu__item_active a {
+  color: #FAFAFA;
 }
 
 .welcome {
@@ -311,57 +332,67 @@ header {
   margin-bottom: 25px;
 }
 
-.petlist {
+.pets {
   padding: 80px 0 100px 0;
   text-align: center;
   background: #F6F6F6;
 }
 
-.petlist h3 {
+.pets h3 {
   margin-bottom: 60px;
 }
 
-.petlist .petlist__carousel__wrap {
+.pets .pets__list__wrap {
   position: relative;
 }
 
-.petlist .petlist__carousel {
-  margin-bottom: 60px;
+.pets .pets__list {
+  margin: 0 -20px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.petlist .petlist__carousel .petlist__carousel__item {
+.pets .pets__list .pets__list__item {
   width: 270px;
-  margin: 0 45px;
+  margin: 0 20px 30px;
   background: #FAFAFA;
   border-radius: 9px;
 }
 
-.petlist .petlist__carousel .petlist__carousel__item:hover {
+.pets .pets__list .pets__list__item:hover {
   cursor: pointer;
   background: #FFFFFF;
 }
 
-.petlist .petlist__carousel .petlist__carousel__item:hover .btn-empty {
+.pets .pets__list .pets__list__item:hover .btn-empty {
   border-color: #FDDCC4;
   background: #FDDCC4;
 }
 
-.petlist .petlist__carousel .petlist__carousel__item__img img {
+.pets .pets__list.pets__list_carousel {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.pets .pets__list.pets__list_carousel .pets__list__item {
+  margin: 0 45px;
+}
+
+.pets .pets__list .pets__list__item__img img {
   display: block;
   border-radius: 9px 9px 0 0;
 }
 
-.petlist .petlist__carousel .petlist__carousel__item__text {
+.pets .pets__list .pets__list__item__text {
   padding: 30px;
 }
 
-.petlist .petlist__carousel .petlist__carousel__item__text p {
+.pets .pets__list .pets__list__item__text p {
   font-family: "Georgia", sans-serif;
   font-size: 20px;
   line-height: 23px;
@@ -370,7 +401,7 @@ header {
   letter-spacing: 0.06em;
 }
 
-.petlist .petlist__carousel__arrow {
+.pets .pets__list__arrow {
   cursor: pointer;
   position: absolute;
   top: calc(50% - 54px/2);
@@ -384,7 +415,7 @@ header {
   background: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4V2L11 2V0L14 3L11 6V4L0 4Z' fill='%23292929'/%3E%3C/svg%3E%0A") 50% 50% no-repeat;
 }
 
-.petlist .petlist__carousel__arrow.petlist__carousel__arrow_left {
+.pets .pets__list__arrow.pets__list__arrow_left {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -393,8 +424,46 @@ header {
   left: 0;
 }
 
-.petlist .petlist__carousel__arrow:hover {
+.pets .pets__list__arrow:hover {
   background-color: #F1CDB3;
+}
+
+.pets .pets__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pets .pets__pagination a {
+  margin: 0 10px;
+  border: 2px solid #F1CDB3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  line-height: 46px;
+  font-size: 20px;
+  font-family: "Georgia", sans-serif;
+  color: #292929;
+  cursor: pointer;
+}
+
+.pets .pets__pagination a:not(.pets__pagination_disabled):hover {
+  background: #F1CDB3;
+}
+
+.pets .pets__pagination .pets__pagination_active {
+  background: #F1CDB3;
+}
+
+.pets .pets__pagination a.pets__pagination_disabled {
+  border-color: #CDCDCD;
+  color: #CDCDCD;
+  cursor: default !important;
 }
 
 .canhelp {
@@ -403,7 +472,7 @@ header {
 }
 
 .canhelp h3 {
-  margin-bottom: 60px;
+  margin-bottom: 59px;
 }
 
 .canhelp .canhelp__list {
@@ -470,7 +539,7 @@ header {
 
 footer {
   background: url(../images/noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  padding-top: 40px;
+  padding-top: 41px;
   font-family: "Georgia", sans-serif;
   font-size: 20px;
   line-height: 115%;
@@ -480,7 +549,7 @@ footer {
 
 footer h3 {
   color: #FFFFFF;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 footer .container {
