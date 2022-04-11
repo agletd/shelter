@@ -551,7 +551,7 @@ body.mainpage .topmenu__item_active a {
 }
 
 footer {
-  background: url(../images/noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url(../images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   padding-top: 41px;
   font-family: "Georgia", sans-serif;
   font-size: 20px;
