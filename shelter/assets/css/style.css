@@ -1,1 +1,543 @@
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/Arial-ItalicMT.eot");
+  src: local("../fonts/Arial Italic"), local("../fonts/Arial-ItalicMT"), url("../fonts/Arial-ItalicMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-ItalicMT.woff") format("woff"), url("../fonts/Arial-ItalicMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
 
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/Arial-BoldItalicMT.eot");
+  src: local("../fonts/Arial Bold Italic"), local("../fonts/Arial-BoldItalicMT"), url("../fonts/Arial-BoldItalicMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldItalicMT.woff") format("woff"), url("../fonts/Arial-BoldItalicMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/ArialMT.eot");
+  src: local("../fonts/Arial"), local("../fonts/ArialMT"), url("../fonts/ArialMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/Arial-BoldMT.eot");
+  src: local("../fonts/Arial Bold"), local("../fonts/Arial-BoldMT"), url("../fonts/Arial-BoldMT.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/Arial-Black.eot");
+  src: local("../fonts/Arial Black"), local("../fonts/Arial-Black"), url("../fonts/Arial-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Arial-Black.woff") format("woff"), url("../fonts/Arial-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia-BoldItalic.eot");
+  src: local("../fonts/Georgia Bold Italic"), local("../fonts/Georgia-BoldItalic"), url("../fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-BoldItalic.woff") format("woff"), url("../fonts/Georgia-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia-Italic.eot");
+  src: local("../fonts/Georgia Italic"), local("../fonts/Georgia-Italic"), url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Italic.woff") format("woff"), url("../fonts/Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia-Bold.eot");
+  src: local("../fonts/Georgia Bold"), local("../fonts/Georgia-Bold"), url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("../fonts/Georgia.eot");
+  src: local("../fonts/Georgia"), url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: #F1CDB3;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Georgia", sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 44px;
+  line-height: 130%;
+}
+
+h3 {
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+h5 {
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.btn {
+  color: #292929;
+  background: #F1CDB3;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-size: 17px;
+  line-height: 130%;
+  padding: 15px 45px;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #FDDCC4;
+}
+
+.btn-empty {
+  border: 2px solid #F1CDB3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  color: #292929;
+  background: transparent;
+  border-radius: 100px;
+  font-family: "Georgia", sans-serif;
+  font-size: 17px;
+  line-height: 130%;
+  padding: 13px 43px;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.btn-empty:hover {
+  border-color: #FDDCC4;
+  background: #FDDCC4;
+}
+
+.btn-pay {
+  color: #545454;
+  font-family: "Georgia", sans-serif;
+  font-size: 20px;
+  line-height: 115%;
+  padding: 10px 15px;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  background: #F1CDB3;
+  border-radius: 9px;
+  display: inline-block;
+}
+
+.btn-pay span {
+  padding-left: 45px;
+  background: url(../icons/icon-credit-card.svg) 0 50% no-repeat;
+}
+
+.btn-pay:hover {
+  background: #FDDCC4;
+}
+
+.top-bg {
+  background: url(../images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainpage header {
+  padding: 60px 0;
+}
+
+.logo__title {
+  font-weight: 400;
+  color: #F1CDB3;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.logo__subtitle {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.topmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding-right: 1px;
+}
+
+.topmenu__item {
+  list-style: none;
+  margin-left: 36px;
+}
+
+.topmenu__item a {
+  color: #CDCDCD;
+  position: relative;
+  display: block;
+}
+
+.topmenu__item a:hover {
+  color: #FAFAFA;
+}
+
+.topmenu__item.topmenu__item_active a {
+  color: #FFFFFF;
+}
+
+.topmenu__item.topmenu__item_active a:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #F1CDB3;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome .welcome__text {
+  max-width: 460px;
+  padding-top: 163px;
+}
+
+.welcome .welcome__text h2 {
+  max-width: 310px;
+  margin-bottom: 42px;
+}
+
+.welcome .welcome__text p {
+  color: #CDCDCD;
+  margin-bottom: 42px;
+}
+
+.welcome .welcome__img img {
+  display: block;
+}
+
+.about {
+  max-width: 850px;
+  margin: 0 auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about__img img {
+  display: block;
+}
+
+.about .about__text {
+  max-width: 430px;
+  color: #442e2e;
+}
+
+.about .about__text h3 {
+  margin-bottom: 25px;
+}
+
+.about .about__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.petlist {
+  padding: 80px 0 100px 0;
+  text-align: center;
+  background: #F6F6F6;
+}
+
+.petlist h3 {
+  margin-bottom: 60px;
+}
+
+.petlist .petlist__carousel__wrap {
+  position: relative;
+}
+
+.petlist .petlist__carousel {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.petlist .petlist__carousel .petlist__carousel__item {
+  width: 270px;
+  margin: 0 45px;
+  background: #FAFAFA;
+  border-radius: 9px;
+}
+
+.petlist .petlist__carousel .petlist__carousel__item:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.petlist .petlist__carousel .petlist__carousel__item:hover .btn-empty {
+  border-color: #FDDCC4;
+  background: #FDDCC4;
+}
+
+.petlist .petlist__carousel .petlist__carousel__item__img img {
+  display: block;
+  border-radius: 9px 9px 0 0;
+}
+
+.petlist .petlist__carousel .petlist__carousel__item__text {
+  padding: 30px;
+}
+
+.petlist .petlist__carousel .petlist__carousel__item__text p {
+  font-family: "Georgia", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 30px;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
+.petlist .petlist__carousel__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 54px/2);
+  right: 0;
+  border: 2px solid #F1CDB3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  background: url("data:image/svg+xml,%3Csvg width='14' height='6' viewBox='0 0 14 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4V2L11 2V0L14 3L11 6V4L0 4Z' fill='%23292929'/%3E%3C/svg%3E%0A") 50% 50% no-repeat;
+}
+
+.petlist .petlist__carousel__arrow.petlist__carousel__arrow_left {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  left: 0;
+}
+
+.petlist .petlist__carousel__arrow:hover {
+  background-color: #F1CDB3;
+}
+
+.canhelp {
+  padding: 80px 0 45px;
+  text-align: center;
+}
+
+.canhelp h3 {
+  margin-bottom: 60px;
+}
+
+.canhelp .canhelp__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.canhelp .canhelp__list__item {
+  margin: 0 60px 55px;
+  white-space: nowrap;
+  color: #545454;
+  font-size: 20px;
+  line-height: 115%;
+  font-family: "Georgia", sans-serif;
+  letter-spacing: 0.06em;
+}
+
+.canhelp .canhelp__list__item img {
+  display: block;
+  width: 60px;
+  margin: 0 auto 30px;
+}
+
+.donation {
+  padding: 80px 0 100px 0;
+  background: #F6F6F6;
+}
+
+.donation .donation__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 916px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.donation .donation__inner__img img {
+  display: block;
+}
+
+.donation .donation__inner__text {
+  margin-left: 30px;
+  color: #B2B2B2;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.donation .donation__inner__text > *:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.donation .donation__inner__text p {
+  font-style: italic;
+}
+
+footer {
+  background: url(../images/noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  padding-top: 40px;
+  font-family: "Georgia", sans-serif;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+footer h3 {
+  color: #FFFFFF;
+  margin-bottom: 34px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-col__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+footer .footer-col:first-child {
+  max-width: 280px;
+}
+
+footer .footer-col:nth-child(2) {
+  max-width: 300px;
+}
+
+footer .footer-col:not(.footer-col_img) {
+  padding-top: 16px;
+}
+
+footer .footer-col_img img {
+  display: block;
+}
+
+footer .footer-col__item_mail {
+  display: inline-block;
+}
+
+footer .footer-col__item a {
+  min-height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-col__item_mail a {
+  padding-left: 60px;
+  background: url(../icons/icon-email.svg) 0 50% no-repeat;
+}
+
+footer .footer-col__item_tel a {
+  padding-left: 60px;
+  background: url(../icons/icon-phone.svg) 0 50% no-repeat;
+}
+
+footer .footer-col__item_map a {
+  padding-left: 42px;
+  background: url(../icons/icon-marker.svg) 0 50% no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
