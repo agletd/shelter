@@ -449,15 +449,16 @@ body.mainpage .topmenu__item_active a {
   font-size: 20px;
   font-family: "Georgia", sans-serif;
   color: #292929;
-  cursor: pointer;
 }
 
 .pets .pets__pagination a:not(.pets__pagination_disabled):hover {
   background: #F1CDB3;
+  cursor: pointer;
 }
 
 .pets .pets__pagination .pets__pagination_active {
   background: #F1CDB3;
+  cursor: default !important;
 }
 
 .pets .pets__pagination a.pets__pagination_disabled {

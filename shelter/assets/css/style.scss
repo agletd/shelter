@@ -436,17 +436,17 @@ body.mainpage .topmenu__item_active a {
             font-size: 20px;
             font-family: $titles-font;
             color: $color-dark-3xl;
-            cursor: pointer;
         }
 
         & a:not(.pets__pagination_disabled):hover {
             background: $color-primary;
+            cursor: pointer;
         }
 
         & .pets__pagination_active {
             background: $color-primary;
+            cursor: default !important;
         }
-
 
         & a.pets__pagination_disabled {
             border-color: $color-dark-s;
