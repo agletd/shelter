@@ -437,7 +437,8 @@ body.mainpage .topmenu__item_active a {
 }
 
 .pets .pets__list__arrow:hover {
-  background-color: #F1CDB3;
+  border-color: #FDDCC4;
+  background-color: #FDDCC4;
 }
 
 .pets .pets__pagination {

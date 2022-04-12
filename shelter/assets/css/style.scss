@@ -429,7 +429,8 @@ body.mainpage .topmenu__item_active a {
             left: 0;
         }
         &:hover {
-            background-color: $color-primary;
+            border-color: $color-primary-light;
+            background-color: $color-primary-light;
         }
     }
 
