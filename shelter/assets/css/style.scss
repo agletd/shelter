@@ -623,6 +623,10 @@ body.mainpage #burger {
             }
         }
         @media (max-width:767px)  {
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+
             & .pets__list__item:nth-child(3) ~ .pets__list__item {
                 display: none;
             }
@@ -968,6 +972,9 @@ footer {
         & .container {
             padding:0 10px;
             justify-content: center;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
         }
         & h3 {
             text-align: center;
