@@ -1240,6 +1240,12 @@ footer .footer-col__item_map a {
   background-color: #F1CDB3;
 }
 
+@media (max-width: 767px) {
+  .popup__container .popup__close {
+    right: -32px;
+  }
+}
+
 .popup__container .popup__img {
   width: 500px;
 }
@@ -1251,6 +1257,18 @@ footer .footer-col__item_map a {
      object-fit: cover;
 }
 
+@media (max-width: 1279px) {
+  .popup__container .popup__img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__container .popup__img {
+    display: none;
+  }
+}
+
 .popup__container .popup__text {
   width: 400px;
   padding: 50px 20px 80px 29px;
@@ -1260,11 +1278,31 @@ footer .footer-col__item_map a {
   font-family: "Georgia", sans-serif;
 }
 
+@media (max-width: 1279px) {
+  .popup__container .popup__text {
+    width: 280px;
+    padding: 10px 9px 30px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__container .popup__text {
+    padding: 14px 9px 30px 10px;
+    width: 240px;
+  }
+}
+
 .popup__container .popup__text__title {
   font-size: 35px;
   line-height: 130%;
   margin-bottom: 10px;
   color: #000;
+}
+
+@media (max-width: 767px) {
+  .popup__container .popup__text__title {
+    text-align: center;
+  }
 }
 
 .popup__container .popup__text__type_breed {
@@ -1273,10 +1311,29 @@ footer .footer-col__item_map a {
   margin-bottom: 40px;
 }
 
+@media (max-width: 1279px) {
+  .popup__container .popup__text__type_breed {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__container .popup__text__type_breed {
+    text-align: center;
+  }
+}
+
 .popup__container .popup__text__desc {
   font-size: 15px;
   line-height: 110%;
   margin-bottom: 40px;
+}
+
+@media (max-width: 1279px) {
+  .popup__container .popup__text__desc {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
 }
 
 .popup__container .popup__text__list ul {
@@ -1296,6 +1353,12 @@ footer .footer-col__item_map a {
   content: "•";
   padding-right: 8px;
   margin-left: -16px;
+}
+
+@media (max-width: 1279px) {
+  .popup__container .popup__text__list ul li {
+    margin-bottom: 5px;
+  }
 }
 
 .popup__overlay {
