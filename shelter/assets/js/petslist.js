@@ -88,3 +88,5 @@ const pets = [
 		"parasites": ["lice", "fleas"]
 	}
 ]
+
+export default pets;
