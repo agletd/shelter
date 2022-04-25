@@ -11,14 +11,14 @@
 <body class="mainpage">
     <div class="top-bg">
         <div class="container">
-            <header>
-                <div class="logo">
+            <header id="header">
+                <div id="logo" class="logo">
                     <a href="#">
                     <h1 class="logo__title">Cozy House</h1>
                     <p class="logo__subtitle">Shelter for pets in Boston</p>
                     </a>
                 </div>
-                <nav class="topmenu">
+                <nav id="mobileMenu" class="topmenu">
                     <ul>
                         <li class="topmenu__item topmenu__item_active"><a href="">About the shelter</a></li>
                         <li class="topmenu__item"><a href="pets.html">Our pets</a></li>
@@ -26,6 +26,7 @@
                         <li class="topmenu__item"><a href="#footer">Contacts</a></li>
                     </ul>
                 </nav>
+                <div id="mobileMenuShadow"></div>
                 <a id="burger"></a>
             </header>
             <div class="welcome">
@@ -61,41 +62,73 @@
                 <h3>Our friends who<br>are looking for a house</h3>
                 <div class="pets__list__wrap">
                     <div class="pets__list pets__list_carousel">
-                        <div class="pets__list__item">
-                            <div class="pets__list__item__img">
-                                <img src="../assets/images/pets-katrine.jpg" alt="">
+                        <div class="pets__list__slide">
+                            <div class="pets__list__item" data-index="0">
+                                <div class="pets__list__item__img">
+                                    <img src="../assets/images/pets-katrine.jpg" alt="">
+                                </div>
+                                <div class="pets__list__item__text">
+                                    <p>Katrine</p>
+                                    <a class="btn-empty">Learn more</a>
+                                </div>
                             </div>
-                            <div class="pets__list__item__text">
-                                <p>Katrine</p>
-                                <a class="btn-empty">Learn more</a>
+                            <div class="pets__list__item" data-index="1">
+                                <div class="pets__list__item__img">
+                                    <img src="../assets/images/pets-jennifer.jpg" alt="">
+                                </div>
+                                <div class="pets__list__item__text">
+                                    <p>Jennifer</p>
+                                    <a class="btn-empty">Learn more</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="pets__list__item">
-                            <div class="pets__list__item__img">
-                                <img src="../assets/images/pets-jennifer.jpg" alt="">
-                            </div>
-                            <div class="pets__list__item__text">
-                                <p>Jennifer</p>
-                                <a class="btn-empty">Learn more</a>
-                            </div>
-                        </div>
-                        <div class="pets__list__item">
-                            <div class="pets__list__item__img">
-                                <img src="../assets/images/pets-woody.jpg" alt="">
-                            </div>
-                            <div class="pets__list__item__text">
-                                <p>Woody</p>
-                                <a class="btn-empty">Learn more</a>
+                            <div class="pets__list__item" data-index="2">
+                                <div class="pets__list__item__img">
+                                    <img src="../assets/images/pets-woody.jpg" alt="">
+                                </div>
+                                <div class="pets__list__item__text">
+                                    <p>Woody</p>
+                                    <a class="btn-empty">Learn more</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="pets__list__nav">
-                        <a class="pets__list__arrow pets__list__arrow_left"></a>
-                        <a class="pets__list__arrow "></a>
+                        <a class="pets__list__btn pets__list__btn_left"></a>
+                        <a class="pets__list__btn pets__list__btn_right"></a>
                     </div>
                 </div>
                 <a class="btn" href="pets.html">Get to know the rest</a>
             </div>
+
+
+            <div class="popup__wrapper ">
+                <div class="popup__container">
+                    <div class="popup__main">
+                        <div class="popup__close"></div>
+                        <div class="popup__img">
+                            <img src="../assets/images/pets-jennifer.jpg" alt="pets">
+                        </div>
+                        <div class="popup__text description">
+                            <h3 class="popup__text__title">Jennifer</h3>
+                            <div class="popup__text__type_breed">
+                                <span class="popup__text__type">Dog</span> -
+                                <span class="popup__text__breed">Labrador</span>
+                            </div>
+                            <div class="popup__text__desc">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</div>
+                            <div class="popup__text__list">
+                                <ul>
+                                    <li><strong>Age:</strong> <span class="popup__text__age">2 months</span></li>
+                                    <li><strong>Inoculations: </strong> <span class="popup__text__inoculations">none</span></li>
+                                    <li><strong>Diseases:</strong> <span class="popup__text__diseases">none</span></li>
+                                    <li><strong>Parasites:</strong> <span class="popup__text__parasites">none</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__overlay"></div>
+            </div>
+
         </div>
         <div class="container">
             <div id="help" class="canhelp">
@@ -179,5 +212,6 @@
     </div>
    </footer> 
 
+   <script  src="../assets/js/index.js"></script>
 </body>
 </html>

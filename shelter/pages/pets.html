@@ -12,14 +12,14 @@
     <div class="header-place"></div>
     <div class="fixed-header">
         <div class="container">
-            <header>
+            <header id="header">
                 <div class="logo">
                     <a href="index.html">
                     <h1 class="logo__title">Cozy House</h1>
                     <p class="logo__subtitle">Shelter for pets in Boston</p>
                     </a>
                 </div>
-                <nav class="topmenu">
+                <nav id="mobileMenu" class="topmenu">
                     <ul>
                         <li class="topmenu__item"><a href="index.html">About the shelter</a></li>
                         <li class="topmenu__item topmenu__item_active"><a href="">Our pets</a></li>
@@ -27,6 +27,7 @@
                         <li class="topmenu__item"><a href="#footer">Contacts</a></li>
                     </ul>
                 </nav>
+                <div id="mobileMenuShadow"></div>
                 <a id="burger"></a>
             </header>
         </div>
@@ -114,13 +115,41 @@
                     </div>
                 </div>
 
-                <div class="pets__pagination">
-                    <a class="pets__pagination_disabled">&lt;&lt;</a>
-                    <a class="pets__pagination_disabled">&lt;</a>
-                    <a class="pets__pagination_active">1</a>
-                    <a class="">&gt;</a>
-                    <a class="">&gt;&gt;</a>
+                <div class="pets__pages">
+                    <a class="pets__pages_first pets__pages_disabled">&lt;&lt;</a>
+                    <a class="pets__pages_prev pets__pages_disabled">&lt;</a>
+                    <a class="pets__pages_cur pets__pages_active">1</a>
+                    <a class="pets__pages_next">&gt;</a>
+                    <a class="pets__pages_last">&gt;&gt;</a>
                 </div>
+            </div>
+
+            <div class="popup__wrapper ">
+                <div class="popup__container">
+                    <div class="popup__main">
+                        <div class="popup__close"></div>
+                        <div class="popup__img">
+                            <img src="../assets/images/pets-jennifer.jpg" alt="pets">
+                        </div>
+                        <div class="popup__text description">
+                            <h3 class="popup__text__title">Jennifer</h3>
+                            <div class="popup__text__type_breed">
+                                <span class="popup__text__type">Dog</span> -
+                                <span class="popup__text__breed">Labrador</span>
+                            </div>
+                            <div class="popup__text__desc">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</div>
+                            <div class="popup__text__list">
+                                <ul>
+                                    <li><strong>Age:</strong> <span class="popup__text__age">2 months</span></li>
+                                    <li><strong>Inoculations: </strong> <span class="popup__text__inoculations">none</span></li>
+                                    <li><strong>Diseases:</strong> <span class="popup__text__diseases">none</span></li>
+                                    <li><strong>Parasites:</strong> <span class="popup__text__parasites">none</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__overlay"></div>
             </div>
         </div>
     </main>
@@ -145,5 +174,7 @@
     </div>
    </footer> 
 
+
+   <script type="module" src="../assets/js/pets.js"></script>
 </body>
 </html>
